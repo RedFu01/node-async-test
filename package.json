@@ -1,0 +1,43 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "reinstall": "rm -rfv node_modules & npm install",
+    "compile": "rm -rfv dist & babel ./src -d ./dist",
+    "test": "mocha --timeout 3000 ./test",
+    "integration": "mocha --timeout 3000 ./test/integration"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Happycar/provider-sdk-cardelmar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Happycar/provider-sdk-cardelmar/issues"
+  },
+  "homepage": "https://github.com/Happycar/provider-sdk-cardelmar#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class": "^0.3.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^3.5.3",
+    "babel-plugin-transform-regenerator": "^6.24.1",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015-node": "^6.1.1"
+  },
+  "dependencies": {
+    "moment": "^2.18.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "xml": "^1.0.1",
+    "xml2js": "^0.4.19"
+  }
+}
